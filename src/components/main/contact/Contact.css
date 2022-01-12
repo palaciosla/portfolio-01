@@ -1,0 +1,51 @@
+.contact {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+
+
+/* FORM */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form input,
+.form textarea {
+    font: inherit;
+    border: none;
+    padding: 1rem;
+    margin: .5rem 0;
+    border-bottom: 1px solid var(--verde-fluor);
+    background: none;
+    background-color: #3B4353;
+    color: var(--gris-font);
+    border-radius: 5px;
+}
+
+.form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: #fff;
+}
+
+.form input[type="submit"] {
+    background-color: var(--verde-oscuro);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.form input[type="submit"]:hover {
+    background-color: var(--verde-fluor);
+}
+

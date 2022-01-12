@@ -1,0 +1,54 @@
+.navbar {
+    background-color: rgb(95, 168, 127);
+    padding: 1rem 0;
+    box-shadow: -3px 1px 4px 0px rgb(31, 114, 70);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.navbar-container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.navbar-links a {
+    font-size: .9rem;
+}
+
+.navbar-links a:hover {
+    color: rgb(133, 133, 133);
+}
+
+.navbar-links img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 468px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}

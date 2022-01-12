@@ -1,0 +1,41 @@
+:root {
+    --verde-fluor: #0be779;
+    --verde-oscuro: #39b175;
+    --gris-bg: #2c323f;
+    --gris-font: rgb(216, 216, 216);
+
+}
+
+.main {
+    background-color: var(--gris-bg);
+    color: var(--gris-font);
+    text-align: center;
+    line-height: 1.5;
+}
+
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-container > * {
+    padding-top: 3rem;
+}
+
+.title-section {
+    margin-bottom: 2rem;
+    padding: .2rem 0;
+    display: inline-block;
+    color: var(--gris-font);
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--verde-fluor);
+}
+
+.main span {
+    color: var(--verde-fluor);
+}
+
+button {
+    border: none;
+    border-radius: 3px;
+}

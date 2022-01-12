@@ -1,0 +1,46 @@
+.skills {
+    margin: 3rem 0;
+}
+
+.skill-icons {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 1rem;
+}
+
+.skill-icon {
+    margin: 0 auto;
+    max-width: 70px;
+    max-height: 70px;
+}
+
+
+.about-me h3 {
+    margin: 2rem 0;
+}
+
+
+.about-mifoto .foto {
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .about-content {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .about-content .about-me {
+        flex: 1;
+    }
+
+    .about-content .skills {
+        flex: 1;
+    }
+}

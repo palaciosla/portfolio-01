@@ -1,0 +1,31 @@
+.card-projects {
+    /* border: 2px solid salmon; */
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    box-shadow: -9px 9px 19px 8px rgb(0 0 0 / 51%);
+    transition: transform .7s ease-in-out;
+}
+
+.card-projects:hover {
+    transform: scale(1.05);
+}
+
+.card-projects img {
+    width: 100%;
+    transition: filter .3s ease-in;
+}
+
+.card-projects img:hover {
+    filter: grayscale(1);
+}
+
+.card-projects p {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+
+}
