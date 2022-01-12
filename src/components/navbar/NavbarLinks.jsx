@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Ingles from '../../img/ingles.png'
 import Espana from '../../img/espana.png'
 
-const NavbarLinks = () => {
+const NavbarLinks = (props) => {
     const [español, setEspañol] = useState(true)
 
     const handleLenguage = () => {
@@ -14,7 +14,7 @@ const NavbarLinks = () => {
     }
 
     return (
-        <nav className='navbar-links'>
+        <nav className={props.active ? "navbar-links is-active" : "navbar-links"}>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>

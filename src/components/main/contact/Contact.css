@@ -49,3 +49,23 @@
     background-color: var(--verde-fluor);
 }
 
+.enviado {
+    background-color: yellowgreen;
+    width: 60%;
+    margin: 0 auto;
+    color: #fff;
+    padding: .5rem;
+    transition: all .6s ease-in-out;
+}
+
+.error {
+    background-color: rgb(219, 31, 31);
+    width: 60%;
+    margin: 0 auto;
+    color: #fff;
+    padding: .5rem;
+    transition: all .6s ease-in-out;
+}
+
+
+
