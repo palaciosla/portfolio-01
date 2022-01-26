@@ -7,7 +7,7 @@ import './Projects.css'
 
 const Projects = () => {
     return (
-        <div className='projects'>
+        <div className='projects' id='projects'>
             <Fade left>
                 <h2 className='title-section'>PROJECTS</h2>
             </Fade>
