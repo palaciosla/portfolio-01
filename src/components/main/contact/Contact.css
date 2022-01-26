@@ -83,6 +83,18 @@
 background-image: url("../../../img/new-w.svg");
 background-size: 15px;
 background-repeat: no-repeat;
-background-position: 215px 19px;
+background-position: 72% 44%;
 margin: 0 3px 0 5px;
+}
+
+@media  screen and (min-width: 480px) {
+  .form input[type="submit"] {
+    background-position: 63% 45%;
+  }
+}
+
+@media  screen and (min-width: 768px) {
+  .form input[type="submit"] {
+    background-position: 60% 45%;
+  }
 }

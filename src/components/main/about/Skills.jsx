@@ -38,7 +38,7 @@ const Skills = () => {
             <h3>Skills</h3>
             <div className="skill-icons">
             {tecnos.map(tecno => {
-                return (<div>
+                return (<div key={tecno.id}>
                     <img src={tecno.icon} alt={tecno.id} className='skill-icon'/>
                     <p>{tecno.id}</p>
                 </div>)

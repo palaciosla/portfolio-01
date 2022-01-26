@@ -2,15 +2,17 @@ import React from 'react'
 import Button from '../../Button'
 import './CardProjects.css'
 
-const CardProjects = (props) => {
+const CardProjects = ({image, title,description, tags}) => {
     return (
         <section className='card-projects'>
-            <img src={props.image} alt={props.title} />
-            <h4><span>{props.title}</span></h4>
-            <p>{props.description}</p>
-            <Button  text='React'/>
-            <Button  text='Css'/>
-            <Button  text='HTML'/>
+            <img src={image.Imagen} alt={title} />
+            <h4><span>{title}</span></h4>
+            <p>{description}</p>
+            {tags.map(tag => {
+                return (
+                    <Button  text={tag} key={tag}/>
+                )
+            })}
         </section>
     )
 }
