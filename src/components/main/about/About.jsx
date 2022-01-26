@@ -5,6 +5,7 @@ import './About.css'
 import Skills from './Skills.jsx';
 
 import Foto from '../../../img/man.png'
+import Button from '../../Button';
 
 
 const About = () => {
@@ -33,6 +34,7 @@ const About = () => {
                     </div>
                     <Skills />
                 </div>
+                <Button type="download" style="main" text="Descargar CV" />
                 
             </Fade>
         </section>

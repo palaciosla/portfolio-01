@@ -18,7 +18,7 @@ const Navbar = () => {
                     {/* <NavbarLinks /> */}
                     <img src={MenuIcon} alt="menu icon" className='menu-icon' onClick={handleMenu} />
                 </div>
-                <NavbarLinks active={isMenuActive}/>
+                <NavbarLinks active={isMenuActive} setIsMenuActive={setIsMenuActive} />
             </div>
         </div>
     )

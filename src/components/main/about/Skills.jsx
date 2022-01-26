@@ -11,15 +11,15 @@ let tecnos = [
     },
     {
         "id": "JavaScript",
-        "icon": "https://img.icons8.com/color/344/javascript--v1.png"
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
     },
     {
         "id": "React",
-        "icon": "https://cdn-icons-png.flaticon.com/512/919/919851.png"
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
     },
     {
         "id": "TypeScript",
-        "icon": "https://cdn-icons-png.flaticon.com/512/919/919832.png"
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
     },
     {
         "id": "Redux",

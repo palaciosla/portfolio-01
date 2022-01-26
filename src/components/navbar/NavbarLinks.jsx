@@ -14,7 +14,7 @@ const NavbarLinks = (props) => {
     }
 
     return (
-        <nav className={props.active ? "navbar-links is-active" : "navbar-links"}>
+        <nav className={props.active ? "navbar-links is-active" : "navbar-links"} onClick={() => props.setIsMenuActive(false)}>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>

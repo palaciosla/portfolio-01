@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { useForm } from './useForm'
+import { useForm } from "../../../hooks/useForm";
+import Loader from "../../Loader.js";
 
 const initialForm = {
   name: "",
@@ -14,28 +15,27 @@ const validationsForm = (form) => {
   let regexMessage = /^.{1,255}$/;
 
   if (form.name.trim() === "") {
-    errors.name = "El campo 'nombre' es requerido.";
+    errors.name = "'Name' is required.";
   } else if (!regexName.test(form.name.trim())) {
-    errors.name = "El nombre no es válido.";
+    errors.name = "The name is not valid.";
   }
 
-  if (form.email.trim()  === "") {
-    errors.email = "El campo 'email' es requerido";
+  if (form.email.trim() === "") {
+    errors.email = "'Email' is required.";
   } else if (!regexEmail.test(form.email.trim())) {
-    errors.email = "El email no es válido.";
+    errors.email = "The email is not valid.";
   }
 
-  if (form.message.trim()  === "") {
-    errors.message = "El campo 'comentarios' es requerido";
+  if (form.message.trim() === "") {
+    errors.message = "'Message' is required.";
   } else if (!regexMessage.test(form.message.trim())) {
-    errors.message = "El comentario no puede superar los 255 caracteres.";
+    errors.message = "The message cannot exceed 255 characters.";
   }
 
   return errors;
 };
 
 const FormContact = () => {
-//   const [isSubmit, setIsSubmit] = useState(undefined);
   const {
     form,
     errors,
@@ -46,36 +46,20 @@ const FormContact = () => {
     handleSubmit,
   } = useForm(initialForm, validationsForm);
 
-//   const onSubmit = (data) => {
-//     console.log(data);
-
-//     setIsSubmit(true);
-
-//     setTimeout(() => {
-//       setIsSubmit(undefined);
-//     }, 3000);
-//   };
-
   return (
     <>
-      <form
-        className="form"
-        // onSubmit={handleSubmit(onSubmit)}
-        id="form-contact"
-        action="https://formsubmit.co/palaciosleandroad@gmail.com"
-        method="POST"
-      >
-        <h2 className="form-title">¡Enviame un mensaje!</h2>
+      <form className="form" onSubmit={handleSubmit} id="form-contact">
+        <h2 className="form-title">¡Send me an email!</h2>
         <input
           type="text"
           name="name"
-          placeholder="Nombre *"
+          placeholder="Name *"
           onBlur={handleBlur}
           onChange={handleChange}
           value={form.name}
           required
         />
-         {errors.name && <p className="error error-pattern">{errors.name}</p>}
+        {errors.name && <p className="error error-pattern">{errors.name}</p>}
         <input
           type="email"
           name="email"
@@ -88,22 +72,19 @@ const FormContact = () => {
         {errors.email && <p className="error error-pattern">{errors.email}</p>}
         <textarea
           name="message"
-          placeholder="Mensaje *"
+          placeholder="Message *"
           onBlur={handleBlur}
           onChange={handleChange}
           value={form.message}
           required
         />
-        {errors.message && <p className="error error-pattern">{errors.message}</p>}
-        <input type="submit" value="SUBMIT" formTarget="_blank" />
+        {errors.message && (
+          <p className="error error-pattern">{errors.message}</p>
+        )}
+        <input type="submit" value="SUBMIT" />
       </form>
-      {/* {isSubmit ? (
-        <p className="enviado">¡Mensaje enviado correctamente!</p>
-      ) : isSubmit === undefined ? (
-        <p></p>
-      ) : (
-        <p className="error">¡No se pudo enviar!</p>
-      )} */}
+      {loading && <Loader />}
+      {response && <p className="enviado">¡Mensaje enviado!</p>}
     </>
   );
 };

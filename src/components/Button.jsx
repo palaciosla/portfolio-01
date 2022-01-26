@@ -1,9 +1,14 @@
 import React from 'react'
 
 let mainButtonStyle = {
+    fontFamily: "inherit",
+    backgroundColor: "#39b175",
     color: "#fff",
-    backgroundColor: "#678",
-    padding: "1rem",
+    borderRadius: "5px",
+    padding: ".8rem",
+    fontWeight: "bold",
+    textTransform: "uppercase",
+    fontSize: ".9rem"
 }
 
 let secondButtonStyle = {
@@ -18,7 +23,7 @@ let secondButtonStyle = {
 
 const Button = (props) => {
     return (
-        <button type={props.type} style={props.style === 'main' ? mainButtonStyle : secondButtonStyle}>{props.text}</button>
+        <button className='btn' type={props.type} style={props.style === 'main' ? mainButtonStyle : secondButtonStyle}>{props.text}</button>
     )
 }
 
