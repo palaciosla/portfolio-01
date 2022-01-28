@@ -9,7 +9,7 @@ import './Contact.css'
 
 const Contact = () => {
     return (
-        <div className='contact' id='contact'>
+        <section className='contact' id='contact'>
             <section >
                 <Fade left>
                 <h2 className='title-section'>CONTACT</h2>
@@ -20,7 +20,7 @@ const Contact = () => {
                     <FormContact />
                 </Fade>
             </section>
-        </div>
+        </section>
     )
 }
 

@@ -21,7 +21,7 @@ const About = () => {
                 <div className="about-content">
                     <div className="about-me">
                         <h4> I'm <span>Leandro</span> </h4>
-
+                        <Button type="download" style="main" text="Descargar CV" />
                         <p>⚡ I'm a software engineer focusing on Front-End web.</p>
 
                         <p>⚡ You can find me working with <span>JavaScript, React, HTML and CSS.</span></p>
@@ -34,7 +34,7 @@ const About = () => {
                     </div>
                     <Skills />
                 </div>
-                <Button type="download" style="main" text="Descargar CV" />
+                
                 
             </Fade>
         </section>

@@ -6,8 +6,6 @@ import CardProjects from "./CardProjects";
 import "./Projects.css";
 import listProjects from "./listProjects";
 
-
-
 const Projects = () => {
   return (
     <div className="projects" id="projects">
@@ -23,11 +21,16 @@ const Projects = () => {
                 title={project.title}
                 image={project.image}
                 description={project.description}
+                descriptionModal={project.descriptionModal}
                 tags={project.tags}
+                linkGit={project.linkGit}
+                linkDemo={project.linkDemo}
               />
             );
           })}
+          
         </div>
+        <h3 className="projects-more">Te invito a visitar mi GitHub donde podes encontrar mas</h3>
       </Fade>
     </div>
   );

@@ -8,7 +8,9 @@ let mainButtonStyle = {
     padding: ".8rem",
     fontWeight: "bold",
     textTransform: "uppercase",
-    fontSize: ".9rem"
+    fontSize: ".9rem",
+    margin: "1rem 0",
+    cursor: "pointer",
 }
 
 let secondButtonStyle = {
@@ -18,7 +20,7 @@ let secondButtonStyle = {
     margin: ".5rem",
     fontWeight: "900",
     textTransform: "uppercase",
-    fontSize: ".7rem"
+    fontSize: ".7rem",
 }
 
 const Button = (props) => {
