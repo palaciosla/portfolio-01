@@ -1,13 +1,13 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import "./Modal.css";
 
 const Modal = ({ children, isOpen, closeModal, buttonStyle }) => {
-
   const handleModalClick = (e) => {
-    if(e.target.tagName === "BUTTON"){
-      e.stopPropagation()
+    if (e.target.tagName === "BUTTON") {
+      e.stopPropagation();
     } else {
-      return
+      return;
     }
   };
 
@@ -17,7 +17,7 @@ const Modal = ({ children, isOpen, closeModal, buttonStyle }) => {
     top: "-4px",
     right: "0px",
   };
-  return (
+  return ReactDOM.createPortal(
     <article
       className={isOpen ? "modal is-open" : "modal"}
       onClick={closeModal}
@@ -32,7 +32,8 @@ const Modal = ({ children, isOpen, closeModal, buttonStyle }) => {
         </button>
         {children}
       </div>
-    </article>
+    </article>,
+    document.getElementById('modals')
   );
 };
 

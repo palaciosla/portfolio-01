@@ -16,8 +16,6 @@ const CardProjects = ({
 }) => {
   let { isOpen, openModal, closeModal } = useModal(false);
 
-  console.log(descriptionModal)
-
   const buttonStyle = {
     fontFamily: "inherit",
     backgroundColor: "#39b175",
