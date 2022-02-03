@@ -32,7 +32,7 @@ const CardProjects = ({
   return (
     <>
       <section className="card-projects">
-        <img src={image.Imagen} alt={title} />
+        <img src={image} alt={title} />
         <h4>
           <span>{title}</span>
         </h4>
@@ -50,11 +50,11 @@ const CardProjects = ({
         buttonStyle={buttonStyle}
       >
         <h3 className="modal-title">{title}</h3>
-        <img src={image.Imagen} alt={title} className="modal-img" />
+        <img src={image} alt={title} className="modal-img" />
         <p className="modal-description">{descriptionModal}</p>
 
         {tags.map((tag, index) => {
-          return <Button text={tag} key={index} />;
+          return <Button text={tag} key={index}/>;
         })}
         <div>
           <a href={linkDemo} target="_blank" rel="noreferrer">

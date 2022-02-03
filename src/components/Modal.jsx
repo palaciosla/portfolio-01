@@ -4,11 +4,7 @@ import "./Modal.css";
 
 const Modal = ({ children, isOpen, closeModal, buttonStyle }) => {
   const handleModalClick = (e) => {
-    if (e.target.tagName === "BUTTON") {
-      e.stopPropagation();
-    } else {
-      return;
-    }
+    e.stopPropagation();
   };
 
   const buttonCloseStyle = {
@@ -33,7 +29,7 @@ const Modal = ({ children, isOpen, closeModal, buttonStyle }) => {
         {children}
       </div>
     </article>,
-    document.getElementById('modals')
+    document.getElementById("modals")
   );
 };
 

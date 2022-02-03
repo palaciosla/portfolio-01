@@ -18,7 +18,7 @@ const Projects = () => {
             return (
               <CardProjects
                 key={project.title}
-                title={project.title}npm
+                title={project.title}
                 image={project.image}
                 description={project.description}
                 descriptionModal={project.descriptionModal}

@@ -21,7 +21,7 @@ const About = () => {
                 <div className="about-content">
                     <div className="about-me">
                         <h4> I'm <span>Leandro</span> </h4>
-                        <Button type="download" style="main" text="Descargar CV" />
+                        
                         <p>⚡ I'm a software engineer focusing on Front-End web.</p>
 
                         <p>⚡ You can find me working with <span>JavaScript, React, HTML and CSS.</span></p>
@@ -31,6 +31,8 @@ const About = () => {
                         <p>⚡Since 2015 - I've spent my time seeking and learning new technologies and forms of digital expression. This has led to me working on some amazing world-class projects, worked at some amazing places, and worked with some great people.</p>
                         <p>🚩 I'm living in <span>Buenos Aires, Argentina</span></p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quia nesciunt. Numquam autem ullam, laborum accusantium, ad vero dolor delectus officiis aliquam cum assumenda! </p>
+
+                        <Button type="download" style="main" text="Descargar CV" />
                     </div>
                     <Skills />
                 </div>

@@ -7,10 +7,10 @@
     box-shadow: -9px 9px 19px 8px rgb(0 0 0 / 51%);
     transition: transform .7s ease-in-out;
 }
-/* 
+
 .card-projects:hover {
     transform: scale(1.05);
-} */
+}
 
 .card-projects img {
     width: 100%;
