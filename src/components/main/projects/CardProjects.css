@@ -8,11 +8,21 @@
     transition: transform .7s ease-in-out;
 }
 
+.card-container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .card-projects:hover {
     transform: scale(1.05);
 }
 
 .card-projects img {
+    min-height: 200px;
+    max-height: 205px;
     width: 100%;
     transition: filter .3s ease-in;
 }
@@ -24,6 +34,13 @@
 .card-projects p {
     width: 90%;
     margin: 0 auto;
+}
+
+.tag-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {

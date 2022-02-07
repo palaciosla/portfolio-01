@@ -32,14 +32,18 @@ const CardProjects = ({
   return (
     <>
       <section className="card-projects">
-        <img src={image} alt={title} />
-        <h4>
-          <span>{title}</span>
-        </h4>
-        <p>{description}</p>
-        <button style={buttonStyle} onClick={openModal}>
-          + INFO
-        </button>
+        <div className="card-container">
+          <img src={image} alt={title} />
+          <div>
+            <h4 style={{margin: ".5rem 0"}}>
+              <span >{title}</span>
+            </h4>
+            <p>{description}</p>
+            <button style={buttonStyle} onClick={openModal}>
+              + INFO
+            </button>
+          </div>
+        </div>
 
         {/*  */}
       </section>
@@ -52,10 +56,11 @@ const CardProjects = ({
         <h3 className="modal-title">{title}</h3>
         <img src={image} alt={title} className="modal-img" />
         <p className="modal-description">{descriptionModal}</p>
-
-        {tags.map((tag, index) => {
-          return <Button text={tag} key={index}/>;
-        })}
+        <div className="tag-container">
+          {tags.map((tag, index) => {
+            return <Button text={tag} key={index} />;
+          })}
+        </div>
         <div>
           <a href={linkDemo} target="_blank" rel="noreferrer">
             <button style={buttonStyle}>

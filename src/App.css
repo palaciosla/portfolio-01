@@ -22,3 +22,7 @@ a {
   font-weight: 300;
   font-size: 1rem;
 }
+
+img {
+    object-fit: cover;
+}
