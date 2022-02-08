@@ -1,26 +1,28 @@
-import React from 'react'
-import Fade from 'react-reveal/Fade';
+import React, { useContext } from "react";
+import Fade from "react-reveal/Fade";
 
-import './About.css'
-import Skills from './Skills.jsx';
+import "./About.css";
+import Skills from "./Skills.jsx";
 
-import Foto from '../../../img/man.png'
-import Button from '../../Button';
-
+import Foto from "../../../img/man.png";
+import Button from "../../Button";
+import LanguageContext from "../../../context/LanguageContext";
 
 const About = () => {
-    return (
-        <section className='about' id='about'>
-            <Fade left>
-                <div className="about-mifoto">
-                    <img src={Foto} alt="Foto" className="foto" />
-                </div>
-                <h2 className='title-section'>ABOUT ME</h2>
-            </Fade>
-            <Fade right>
-                <div className="about-content">
-                    <div className="about-me">
-                        <h4> I'm <span>Leandro</span> </h4>
+  const { texts } = useContext(LanguageContext);
+  return (
+    <section className="about" id="about">
+      <Fade left>
+        <div className="about-mifoto">
+          <img src={Foto} alt="Foto" className="foto" />
+        </div>
+        <h2 className="title-section">{texts.main.aboutTitle}</h2>
+      </Fade>
+      <Fade right>
+        <div className="about-content">
+          <div className="about-me">
+            <p>{texts.main.aboutDescription}</p>
+            {/* <h4> I'm <span>Leandro</span> </h4>
                         
                         <p>⚡ I'm a software engineer focusing on Front-End web.</p>
 
@@ -30,17 +32,15 @@ const About = () => {
 
                         <p>⚡Since 2015 - I've spent my time seeking and learning new technologies and forms of digital expression. This has led to me working on some amazing world-class projects, worked at some amazing places, and worked with some great people.</p>
                         <p>🚩 I'm living in <span>Buenos Aires, Argentina</span></p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quia nesciunt. Numquam autem ullam, laborum accusantium, ad vero dolor delectus officiis aliquam cum assumenda! </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quia nesciunt. Numquam autem ullam, laborum accusantium, ad vero dolor delectus officiis aliquam cum assumenda! </p> */}
 
-                        <Button type="download" style="main" text="Descargar CV" />
-                    </div>
-                    <Skills />
-                </div>
-                
-                
-            </Fade>
-        </section>
-    )
-}
+            <Button type="download" style="main" text={texts.main.aboutDownloadCV} />
+          </div>
+          <Skills />
+        </div>
+      </Fade>
+    </section>
+  );
+};
 
-export default About
+export default About;

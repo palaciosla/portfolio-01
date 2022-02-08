@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import LanguageContext from "../../../context/LanguageContext";
 import { useForm } from "../../../hooks/useForm";
 import Loader from "../../Loader.js";
 
@@ -36,6 +37,7 @@ const validationsForm = (form) => {
 };
 
 const FormContact = () => {
+  const { texts } = useContext(LanguageContext);
   const {
     form,
     errors,
@@ -49,11 +51,11 @@ const FormContact = () => {
   return (
     <>
       <form className="form" onSubmit={handleSubmit} id="form-contact">
-        <h2 className="form-title">¡Send me an email!</h2>
+        <h2 className="form-title">{texts.main.contactSendEmail}</h2>
         <input
           type="text"
           name="name"
-          placeholder="Name *"
+          placeholder={texts.main.contactFormName}
           onBlur={handleBlur}
           onChange={handleChange}
           value={form.name}
@@ -63,7 +65,7 @@ const FormContact = () => {
         <input
           type="email"
           name="email"
-          placeholder="Email *"
+          placeholder={texts.main.contactFormEmail}
           onBlur={handleBlur}
           onChange={handleChange}
           value={form.email}
@@ -72,7 +74,7 @@ const FormContact = () => {
         {errors.email && <p className="error error-pattern">{errors.email}</p>}
         <textarea
           name="message"
-          placeholder="Message *"
+          placeholder={texts.main.contactFormMessage}
           onBlur={handleBlur}
           onChange={handleChange}
           value={form.message}
@@ -81,10 +83,10 @@ const FormContact = () => {
         {errors.message && (
           <p className="error error-pattern">{errors.message}</p>
         )}
-        <input type="submit" value="SUBMIT" />
+        <input type="submit" value={texts.main.contactFormButton} />
       </form>
       {loading && <Loader />}
-      {response && <p className="enviado">¡Mensaje enviado!</p>}
+      {response && <p className="enviado">{texts.main.contactSucces}</p>}
     </>
   );
 };

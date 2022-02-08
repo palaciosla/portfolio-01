@@ -1,18 +1,42 @@
+:root {
+  --verde-fluor: #0be779;
+  --verde-oscuro: #39b175;
+  --gris-bg: #2c323f;
+  --gris-font: rgb(216, 216, 216);
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    background-color: var(--gris-bg);
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+.App {
+  background-color: var(--gris-bg);
+  color: var(--gris-font);
+}
+
+.App.light {
+  background-color: rgb(225 237 235);
+  color: var(--gris-bg);
+}
+
+.App.light .form input:not(input[type="submit"]),
+.App.light .form textarea {
+  background-color: rgb(184, 202, 199);
+  color: #000
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 a {
@@ -24,5 +48,5 @@ a {
 }
 
 img {
-    object-fit: cover;
+  object-fit: cover;
 }

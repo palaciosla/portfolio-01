@@ -10,7 +10,7 @@
 .navbar-container {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -31,12 +31,21 @@
 .navbar-links a:hover {
     color: rgb(133, 133, 133);
 }
+.navbar-links button {
+    margin-left: 2rem;
+    background-color: transparent;
+}
 
 .navbar-links img {
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
     cursor: pointer;
-    margin-left: 2rem;
+    
+}
+
+.navbar-icons-container {
+    display: flex;
+    margin-left: 0;
 }
 
 .menu-icon {

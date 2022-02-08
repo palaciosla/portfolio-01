@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import LanguageContext from "../../../context/LanguageContext";
 
 let skills = [
   {
@@ -66,11 +67,12 @@ let tools = [
 ];
 
 const Skills = () => {
+  const { texts } = useContext(LanguageContext);
   return (
     <div className="skills">
       <div className="skills-container">
         <div className="skill-icons">
-          <h3>Skills</h3>
+          <h3>{texts.main.aboutTitleSkills}</h3>
           <div className="skills-icons__container">
             {skills.map((tecno) => {
               return (
@@ -85,7 +87,7 @@ const Skills = () => {
 
         <div className="skills">
           <div className="skill-icons tools">
-            <h3>Tools</h3>
+            <h3>{texts.main.aboutTitleTools}</h3>
             <div className="skills-icons__container tools-container">
               {tools.map((tecno) => {
                 return (

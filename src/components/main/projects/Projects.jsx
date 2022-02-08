@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import Fade from "react-reveal/Fade";
 import CardProjects from "./CardProjects";
 
 import "./Projects.css";
 import listProjects from "./listProjects";
+import LanguageContext from "../../../context/LanguageContext";
 
 const Projects = () => {
+  const { texts } = useContext(LanguageContext);
+  
   return (
     <div className="projects" id="projects">
       <Fade left>
-        <h2 className="title-section">PROJECTS</h2>
+        <h2 className="title-section">{texts.main.projectsTitle}</h2>
       </Fade>
       <Fade right>
         <div className="projects-content">
@@ -30,7 +33,7 @@ const Projects = () => {
           })}
           
         </div>
-        <h3 className="projects-more">Te invito a visitar mi GitHub donde podes encontrar mas</h3>
+        <h3 className="projects-more">{texts.main.projectInvite}</h3>
       </Fade>
     </div>
   );
