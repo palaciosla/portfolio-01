@@ -10,11 +10,9 @@ const LanguageProvider = ({ children }) => {
 
   const handleLanguage = (languageMode) => {
     if (languageMode === "es") {
-      console.log("español");
       setLanguage("es");
       setTexts(translationsInfo.es);
     } else {
-      console.log("english");
       setLanguage("en");
       setTexts(translationsInfo.en);
     }

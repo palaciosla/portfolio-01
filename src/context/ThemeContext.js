@@ -8,10 +8,8 @@ const ThemeProvider = ({ children }) => {
 
   const handleTheme = (themeMode) => {
     if (themeMode === "light") {
-      console.log("cambiar a modo light");
       setTheme("light");
     } else {
-      console.log("cambiar a modo dark");
       setTheme("dark");
     }
   };
