@@ -1,5 +1,5 @@
-import React, { useContext, useState } from "react";
-import MenuIcon from "../../img/menu.png";
+import React, { useState } from "react";
+import MenuIcon from "../../img/bars-solid.svg";
 import NavbarLinks from "./NavbarLinks";
 import "./Navbar.css";
 import Logo from "../Logo";

@@ -30,7 +30,7 @@ html {
 .App.light .form input:not(input[type="submit"]),
 .App.light .form textarea {
   background-color: rgb(184, 202, 199);
-  color: #000
+  color: #000;
 }
 
 *,
