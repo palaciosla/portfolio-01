@@ -1,6 +1,7 @@
 import Imagen from "../../../img/pro1.png";
 import Ecommerce from "../../../img/ecommerce.png";
 import BuscadorImg from "../../../img/buscador-preview.png";
+import Todo from "../../../img/todo-print.png"
 
 const listProjects = [
   {
@@ -42,23 +43,20 @@ const listProjects = [
     linkDemo: "https://tutuca-ecommerce.netlify.app/",
   },
   {
-    title: "Portfolio Personal2222",
-    image: Imagen,
-    description: "Simple portfolio hecho para mi búsqueda. ",
+    title: "To do List",
+    image: Todo,
+    description: "App de tareas por hacer.",
     descriptionModal:
-      "Simple portfolio hecho para mi búsqueda. Simple portfolio hecho para mi búsqueda. Simple portfolio hecho para mi búsqueda. Simple portfolio hecho para mi búsqueda.",
+      "To do List hecho en React. Prácticas en el manejo de estado y paso de props. Las tareas se guardan en localStorage",
     tags: [
       "react",
       "css",
-      "javascript",
+      "bootstrap",
       "html",
-      "react",
-      "css",
-      "javascript",
-      "html",
+      "localStorage",
     ],
-    linkGit: "https://www.google.com.ar",
-    linkDemo: "https://www.linkedin.com",
+    linkGit: "https://github.com/palaciosla/todo-list-react",
+    linkDemo: "https://lean-todo-list.netlify.app/",
   },
   // {
   //   title: "Portfolio Personal333",
