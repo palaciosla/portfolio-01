@@ -24,12 +24,15 @@ const About = () => {
             <div
               dangerouslySetInnerHTML={{ __html: texts.main.aboutDescription }}
             ></div>
-
-            <Button
-              type="download"
-              style="main"
-              text={texts.main.aboutDownloadCV}
-            />
+            <a href="https://download1639.mediafire.com/hho444darfhg/8xjodjyudyjml2v/Leandro-Palacios-CV.pdf">
+              <Button
+                type="download"
+                href="Leandro-Palacios-CV.pdf"
+                download="Leandro Palacios CV"
+                style="main"
+                text={texts.main.aboutDownloadCV}
+              />
+            </a>
           </div>
           <Skills />
         </div>
