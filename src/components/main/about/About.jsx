@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 import "./About.css";
 import Skills from "./Skills.jsx";
 
-import Foto from "../../../img/foto-cv.png";
+import Foto from "../../../img/foto-cv2.png";
 import Button from "../../Button";
 import LanguageContext from "../../../context/LanguageContext";
 
@@ -24,12 +24,12 @@ const About = () => {
             <div
               dangerouslySetInnerHTML={{ __html: texts.main.aboutDescription }}
             ></div>
-            <a href="https://download1639.mediafire.com/hho444darfhg/8xjodjyudyjml2v/Leandro-Palacios-CV.pdf">
+            <a href="https://download1585.mediafire.com/mm47fwcysujg/vt2890r8y69rgaq/Palacios_Leandro_CV.pdf">
               <Button
                 type="download"
                 href="Leandro-Palacios-CV.pdf"
                 download="Leandro Palacios CV"
-                style="main"
+                styles="main"
                 text={texts.main.aboutDownloadCV}
               />
             </a>

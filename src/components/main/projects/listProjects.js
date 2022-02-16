@@ -1,7 +1,8 @@
-import Imagen from "../../../img/pro1.png";
+// import Imagen from "../../../img/pro1.png";
 import Ecommerce from "../../../img/ecommerce.png";
 import BuscadorImg from "../../../img/buscador-preview.png";
-import Todo from "../../../img/todo-print.png"
+import MenuImg from "../../../img/screen-menu.png";
+import Todo from "../../../img/todo-print.png";
 
 const listProjects = [
   {
@@ -24,6 +25,23 @@ const listProjects = [
     linkDemo: "https://buscador-de-musica-react.netlify.app/",
   },
   {
+    title: "Menú Restaurant",
+    image: MenuImg,
+    description: "App para hacer pedidos.",
+    descriptionModal:
+      "Challenge presentado en Alkemy.org. App que simula un menú de restaurant, busca los platos a travez de una API y puedes agregarlos al menú. Al agregar al menú, muestra una barra donde indica el total, health score y tiempo promedio de demora. El login se hace con una petición a alkemy [email: 'challenge@alkemy.org', password: 'react'] ",
+    tags: [
+      "react",
+      "css",
+      "material ui",
+      "react router dom",
+      "localStorage",
+      "axios",
+    ],
+    linkGit: "https://github.com/palaciosla/react-alkemy",
+    linkDemo: "https://menu-lean.netlify.app",
+  },
+  {
     title: "UI E-commerce Fashion",
     image: Ecommerce,
     description: "Simulación de UI de e-commerce",
@@ -42,22 +60,17 @@ const listProjects = [
     linkGit: "https://github.com/palaciosla/e-commerce-fashion",
     linkDemo: "https://tutuca-ecommerce.netlify.app/",
   },
-  {
-    title: "To do List",
-    image: Todo,
-    description: "App de tareas por hacer.",
-    descriptionModal:
-      "To do List hecho en React. Prácticas en el manejo de estado y paso de props. Las tareas se guardan en localStorage",
-    tags: [
-      "react",
-      "css",
-      "bootstrap",
-      "html",
-      "localStorage",
-    ],
-    linkGit: "https://github.com/palaciosla/todo-list-react",
-    linkDemo: "https://lean-todo-list.netlify.app/",
-  },
+  // {
+  //   title: "To do List",
+  //   image: Todo,
+  //   description: "App de tareas por hacer.",
+  //   descriptionModal:
+  //     "To do List hecho en React. Prácticas en el manejo de estado y paso de props. Las tareas se guardan en localStorage",
+  //   tags: ["react", "css", "bootstrap", "html", "localStorage"],
+  //   linkGit: "https://github.com/palaciosla/todo-list-react",
+  //   linkDemo: "https://lean-todo-list.netlify.app/",
+  // },
+
   // {
   //   title: "Portfolio Personal333",
   //   image: { Imagen },

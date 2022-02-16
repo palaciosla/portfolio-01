@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio-01/static/css/main.9bd35d07.css",
-    "main.js": "/portfolio-01/static/js/main.846239d5.js",
+    "main.css": "/portfolio-01/static/css/main.6486ee67.css",
+    "main.js": "/portfolio-01/static/js/main.ee33594b.js",
+    "static/media/screen-menu.png": "/portfolio-01/static/media/screen-menu.20083990b15c4093fc1f.png",
+    "static/media/foto-cv2.png": "/portfolio-01/static/media/foto-cv2.eeab5372d9b68a030fc3.png",
     "static/media/ecommerce.png": "/portfolio-01/static/media/ecommerce.2d0623f089d251ef3315.png",
     "static/media/buscador-preview.png": "/portfolio-01/static/media/buscador-preview.1e4a6f765af98f2e1390.png",
-    "static/media/foto-cv.png": "/portfolio-01/static/media/foto-cv.1c47bea0709ec2e44a8f.png",
-    "static/media/pro1.png": "/portfolio-01/static/media/pro1.f5475c1eb10b066e8456.png",
     "static/media/github.png": "/portfolio-01/static/media/github.022c32905eb41f966d23.png",
     "static/media/whatsapp.png": "/portfolio-01/static/media/whatsapp.8c3e2ecb4a66655dc33f.png",
     "static/media/sun.png": "/portfolio-01/static/media/sun.f794832ad72b90c61eb7.png",
@@ -15,11 +15,11 @@
     "index.html": "/portfolio-01/index.html",
     "static/media/new-w.svg": "/portfolio-01/static/media/new-w.ee170f690355d7457791ec080bc7f96a.svg",
     "static/media/bars-solid.svg": "/portfolio-01/static/media/bars-solid.7f41138bdbc17756e17b9efffaa20afb.svg",
-    "main.9bd35d07.css.map": "/portfolio-01/static/css/main.9bd35d07.css.map",
-    "main.846239d5.js.map": "/portfolio-01/static/js/main.846239d5.js.map"
+    "main.6486ee67.css.map": "/portfolio-01/static/css/main.6486ee67.css.map",
+    "main.ee33594b.js.map": "/portfolio-01/static/js/main.ee33594b.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bd35d07.css",
-    "static/js/main.846239d5.js"
+    "static/css/main.6486ee67.css",
+    "static/js/main.ee33594b.js"
   ]
 }
